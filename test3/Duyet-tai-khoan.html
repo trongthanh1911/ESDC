@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Duyệt sân bóng</title>
+        <title>Duyệt tài khoản</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,7 +58,7 @@
         <main class="app-content">
             <div class="app-title">
                 <ul class="app-breadcrumb breadcrumb side">
-                    <li class="breadcrumb-item active"><a href="#"><b>Danh sách sân bóng hiện có</b></a></li>
+                    <li class="breadcrumb-item active"><a href="#"><b>Danh sách tài khoản cần duyệt</b></a></li>
                 </ul>
             </div>
             <div class="row">
@@ -69,24 +69,22 @@
                             <table class="table table-hover table-bordered" id="sampleTable">
                                 <thead>
                                     <tr>
-                                        <th>Mã sân</th>
-                                        <th>Tên sân</th>
-                                        <th>Mô tả chi tiết</th>
+                                        <th>Mã số</th>
+                                        <th>Tên khách hàng</th>
+                                        <th>Thông tin khách hàng</th>
                                         <th>Ảnh</th>
                                         <th>Tình trạng</th>
-                                        <th>Giá thuê</th>
                                         <th>Chức năng</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td data-toggle="modal" data-target="#detail-modal">12434</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Đại học cảnh sát nhân dân</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Đại học cảnh sát nhân dân</td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/chusan/uploads/daihoccanhsatnhandan.jpg" alt="" width="100px;"></td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa thuê</span></td>
-                                        <td data-toggle="modal" data-target="#detail-modal">100.000 đ</td>
-                                        <td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Nguyễn Văn A</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Sinh viên</td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/khach/khach.png" alt="" width="100px;"></td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa xác nhận</span></td>
+                                        <td >
                                             <button class="btn btn-success btn-sm" type="button" title="Duyệt" id="show-emp" data-toggle="modal" data-target="#approve-modal"><i class="fa fa-check"></i></button>
                                             <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
                                         </td>
@@ -94,11 +92,10 @@
 
                                     <tr>
                                         <td data-toggle="modal" data-target="#detail-modal">14465</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Cao Lỗ</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Cao Lỗ</td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/chusan/uploads/sanbongcaolo.jpg" alt="" width="100px;"></td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa thuê</span></td>
-                                        <td data-toggle="modal" data-target="#detail-modal">80.000 đ</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Nguyễn Thị B</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Giáo viên</td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/khach/khach.png" alt="" width="100px;"></td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa xác nhận</span></td>
                                         <td>
                                             <button class="btn btn-success btn-sm" type="button" title="Duyệt" id="show-emp" data-toggle="modal" data-target="#approve-modal"><i class="fa fa-check"></i></button>
                                             <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
@@ -107,12 +104,11 @@
 
                                     <tr>
                                         <td data-toggle="modal" data-target="#detail-modal">15678</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Long Việt</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Long Việt</td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/chusan/uploads/sanbonglongviet.jpg" alt="" width="100px;"></td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa thuê</span></td>
-                                        <td data-toggle="modal" data-target="#detail-modal">30.000 đ</td>
-                                        <td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Cao Văn C</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Học sinh</td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/khach/khach.png" alt="" width="100px;"></td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa xác nhận</span></td>
+                                        <td data-toggle="modal" data-target="#detail-modal">
                                             <button class="btn btn-success btn-sm" type="button" title="Duyệt" id="show-emp" data-toggle="modal" data-target="#approve-modal"><i class="fa fa-check"></i></button>
                                             <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
                                         </td>
@@ -120,11 +116,10 @@
 
                                     <tr>
                                         <td data-toggle="modal" data-target="#detail-modal">16902</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Nghĩa Hoàng Long</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Nghĩa Hoàng Long</td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/chusan/uploads/sanbongnghiahoanglong.jpg" alt="" width="100px;"></td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa thuê</span></td>
-                                        <td data-toggle="modal" data-target="#detail-modal">200.000 đ</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Đinh Thị D</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Công nhân</td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/khach/khach.png" alt="" width="100px;"></td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa xác nhận</span></td>
                                         <td>
                                             <button class="btn btn-success btn-sm" type="button" title="Duyệt" id="show-emp" data-toggle="modal" data-target="#approve-modal"><i class="fa fa-check"></i></button>
                                             <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
@@ -133,11 +128,10 @@
 
                                     <tr>
                                         <td data-toggle="modal" data-target="#detail-modal">17897</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Rạch Giá</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Rạch Giá</td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/chusan/uploads/sanbongrachdia.jpg" alt="" width="100px;"></td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa thuê</span></td>
-                                        <td data-toggle="modal" data-target="#detail-modal">200.000 đ</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Lê Văn E</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Viên chức</td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/khach/khach.png" alt="" width="100px;"></td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa xác nhận</span></td>
                                         <td>
                                             <button class="btn btn-success btn-sm" type="button" title="Duyệt" id="show-emp" data-toggle="modal" data-target="#approve-modal"><i class="fa fa-check"></i></button>
                                             <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
@@ -146,11 +140,10 @@
 
                                     <tr>
                                         <td data-toggle="modal" data-target="#detail-modal">18027</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Tân Phong</td>
-                                        <td data-toggle="modal" data-target="#detail-modal">Sân bóng Tân Phong</td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/chusan/uploads/sanbongtanphong.jpg" alt="" width="100px;"></td>
-                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa thuê</span></td>
-                                        <td data-toggle="modal" data-target="#detail-modal">50.000 đ</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Nguyễn Văn F</td>
+                                        <td data-toggle="modal" data-target="#detail-modal">Bán hàng</td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><img src="images/khach/khach.png" alt="" width="100px;"></td>
+                                        <td data-toggle="modal" data-target="#detail-modal"><span class="badge bg-success">Chưa xác nhận</span></td>
                                         <td>
                                             <button class="btn btn-success btn-sm" type="button" title="Duyệt" id="show-emp" data-toggle="modal" data-target="#approve-modal"><i class="fa fa-check"></i></button>
                                             <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
@@ -167,12 +160,13 @@
         <!--
       MODAL
     -->
+
         <!--Detail MODAL -->
         <div class="modal" tabindex="-1" role="dialog" id="detail-modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Thông tin chi tiết sân bóng</h5>
+                        <h5 class="modal-title">Thông tin chi tiết khách hàng</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -181,34 +175,30 @@
                         <div class="row">
                             <div class="form-group  col-md-12">
                                 <span class="thong-tin-thanh-toan">
-                                    <h5>Thông tin chi tiết sân bóng</h5>
+                                    <h5>Thông tin chi tiết khách hàng</h5>
                                 </span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="control-label">Tên sân</label>
-                                <span class="form-control"> Sân bóng A </span>
+                                <label class="control-label">Họ tên </label>
+                                <span class="form-control" > Nguyễn Văn A </span>
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="control-label">Chủ sân </label>
-                                <span class="form-control"> Nguyễn Văn A </span>
-                            </div>
-                            <div class="form-group col-md-8">
-                                <label class="control-label">Địa chỉ</label>
-                                <span class="form-control">123 Nguyễn Hữu Thọ, Quận 7</span>
-                            </div>
-                            <div class="form-group col-md-8">
-                                <label class="control-label">Mô tả chi tiết </label>
-                                <span class="form-control"> Sân bóng A</span>
+                                <label class="control-label">Giới tính </label>
+                                <span class="form-control"> Nam </span>
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="control-label">Giá đặt sân</label>
-                                <span class="form-control">200.000đ</span>
+                                <label class="control-label">Tuổi</label>
+                                <span class="form-control"> 20 </span>
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="control-label">SĐT chủ sân</label>
-                                <span class="form-control">123456789</span>
+                                <label class="control-label">Nghề nghiệp </label>
+                                <span class="form-control"> Sinh viên </span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Mô tả chi tiết</label>
+                                <span class="form-control"></span>
                             </div>
                         </div>
                     </div>
@@ -226,18 +216,19 @@
 
 
 
+
         <!--Approve MODAL -->
         <div class="modal" tabindex="-1" role="dialog" id="approve-modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Xác nhận đơn đặt sân</h5>
+                        <h5 class="modal-title">Xác nhận đăng ký tài khoản</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Bạn có chắc là bạn muốn xác nhận đơn đặt sân này không?</p>
+                        <p>Bạn có muốn xác nhận đăng ký tài khoản này không?</p>
 
                     </div>
 
@@ -258,23 +249,15 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Xác nhận từ chối hóa đơn</h5>
+                        <h5 class="modal-title">Xác nhận từ chối đăng ký tài khoản</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <p>
-                            Bạn có chắc là bạn muốn từ chối đơn đặt sân này không?
+                            Bạn có muốn từ chối đăng ký tài khoản này không?
                         </p>
-                        <div class="form-group">
-                            <div id="fail-alert" class="alert alert-danger mt-2" style="opacity: 0; display: none">
-                                This type of file is not allowed
-                            </div>
-                            <div id="success-alert" class="alert alert-success mt-2" style="opacity: 0; display: none">
-                                This type of file is allowed
-                            </div>
-                        </div>
                     </div>
 
                     <div class="modal-footer">
