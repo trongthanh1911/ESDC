@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- CSS
+    <link rel="stylesheet" href="../css/template.css" /> -->
+
+    <!-- Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
+  <body>
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+  <div class="row w-100 shadow-lg bg-white rounded" style="padding: 90px 60px">
+    <div class="col-12 col-lg-6">
+      <object data="football2.svg" width="100%" height="100%"></object>
+    </div>
+    <div class="col-12 col-lg-6 mt-4">
+      <form method="POST">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="icon-username">
+                <i class="fa-solid fa-user"></i>
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              id="username"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="icon-username"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="icon-password">
+                <i class="fa-solid fa-lock"></i>
+              </span>
+            </div>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id="password"
+              placeholder="Password"
+              aria-label="Username"
+              aria-describedby="icon-password"
+            />
+          </div>
+        </div>
+        <!-- Show Message -->
+        <div class="form-group">
+          <div
+            id="fail-alert"
+            class="alert alert-danger mt-2"
+            style="opacity: 0; display: none"
+          >
+            This type of file is not allowed
+          </div>
+          <div
+            id="success-alert"
+            class="alert alert-success mt-2"
+            style="opacity: 0; display: none"
+          >
+            This type of file is allowed
+          </div>
+        </div>
+        <div class="mb-2 float-left"><a href="/register">Sign up</a></div>
+        <button
+          id="login-button"
+          type="button"
+          class="btn btn-default w-100 p-2"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+  </body>
+  <script src="./js/login/index.js"></script>
+
+</html>
