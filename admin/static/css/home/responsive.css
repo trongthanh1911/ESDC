@@ -1,0 +1,32 @@
+@media only screen and (max-width: 992px) {
+  /* Navbar */
+  .navbar-middle {
+    display: none;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+
+  .logo__title {
+    margin: 0;
+  }
+  .navbar-menu {
+    display: block;
+  }
+
+  /* Search */
+  .product-search {
+    flex-direction: column;
+  }
+
+  .search-box__input {
+    width: 100%;
+  }
+
+  .product-search__btn {
+    margin-top: 32px;
+
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
