@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Duyệt tài khoản</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Main CSS-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!-- Font-icon css-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+      
+      </head>
+
+    <body class="app sidebar-mini rtl">
+        <!-- Navbar-->
+        <header class="app-header">
+            <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+                                            aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+                <!-- User Menu-->
+                <li>
+                    <a class="app-nav__item" href="Duyet-san-bong.html"><i class='bx bx-log-out bx-rotate-180'></i> </a>
+                </li>
+            </ul>
+        </header>
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user">
+                <img class="app-sidebar__user-avatar" src="images/slide2.jpg" width="50px"
+                     alt="User Image">
+                <div>
+                    <p class="app-sidebar__user-name"><b>Soccer Booking</b></p>
+                    <p class="app-sidebar__user-designation">ADMIN</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="app-menu">
+                <li>
+                    <a class="app-menu__item active" href="Duyet-san-bong.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Duyệt sân bóng</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item active" href="Duyet-tai-khoan.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Duyệt khách hàng</span> 
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item active" href="quan-ly-chu-san.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý chủ sân</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="app-content">
+            <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side">
+                    <li class="breadcrumb-item active"><a href="#"><b>Danh sách chủ sân hiện có</b></a></li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#add-account-modal"
+                >
+                  Thêm Tài Khoản Mới
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tile">
+                        <div class="tile-body">
+
+                            <table class="table table-hover table-bordered" id="sampleTable">
+                                <thead>
+                                    <tr>
+                                         <th>ID</th>
+                                         <th>Username</th>
+                                         <th>Họ tên</th>
+                                         <th>CMND</th>
+                                         <th>Số điện thoại</th>
+                                         <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>chusan1</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>12345678</td>
+                                        <td>12345678910</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="../chusan/profile.html"><i class="fa fa-eye"></i></a>
+                                            <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>chusan1</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>12345678</td>
+                                        <td>12345678910</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="../chusan/profile.html"><i class="fa fa-eye"></i></a>
+                                            <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>chusan1</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>12345678</td>
+                                        <td>12345678910</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="../chusan/profile.html"><i class="fa fa-eye"></i></a>
+                                            <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>chusan1</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>12345678</td>
+                                        <td>12345678910</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="../chusan/profile.html"><i class="fa fa-eye"></i></a>
+                                            <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>chusan1</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>12345678</td>
+                                        <td>12345678910</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="../chusan/profile.html"><i class="fa fa-eye"></i></a>
+                                            <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>chusan1</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>12345678</td>
+                                        <td>12345678910</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="../chusan/profile.html"><i class="fa fa-eye"></i></a>
+                                            <button class="btn btn-danger btn-sm" type="button" title="Sửa" id="show-emp" data-toggle="modal" data-target="#disapprove-modal"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--
+      MODAL
+    -->
+        
+
+       <!-- ADD ACCOUNT MODAL -->
+ <div class="modal" id="add-account-modal">
+     <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h3 class="modal-title text-primary">Thêm tài khoản chủ sân</h3>
+                 <button type="button" class="close" data-dismiss="modal">
+                     &times;
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form method="" action="POST">
+                     <div class="form-group">
+                         <label for="userName">Username:</label>
+                         <input class="form-control" id="userName" type="text">
+                     </div>
+                     <div class="form-group">
+                         <label for="firstName">Tên:</label>
+                         <input class="form-control" id="firstName" type="text">
+                     </div>
+                     <div class="form-group">
+                         <label for="lastName">Họ và tên đệm:</label>
+                         <input class="form-control" id="lastName" type="text">
+                     </div>
+                     <div class="form-group">
+                         <label for="sex">Giới tính:</label>
+                         <select class="form-control" name="sex" id="sex">
+                            <option value="true" selected>Male</option>
+                            <option value="false">Female</option>
+                         </select>
+                     </div>
+                     <div class="form-group">
+                         <label for="birthDay">Birthday:</label>
+                         <input class="form-control" id="birthDay" type="date">
+                     </div>
+                     <div class="form-group">
+                         <label for="sdt">Số điện thoại:</label>
+                         <input class="form-control" id="sdt" type="text">
+                     </div>
+                     <div class="form-group">
+                         <label for="cmnd">CMND:</label>
+                         <input class="form-control" id="cmnd" type="text">
+                     </div>
+                     <div class="form-group">
+                         <div id="fail-alert" class="alert alert-danger mt-2" style="opacity: 0; display:none">
+                             This type of file is not allowed
+                         </div>
+                         <div id="success-alert" class="alert alert-success mt-2" style="opacity: 0; display:none;">
+                             This type of file is allowed
+                         </div>
+                     </div>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="submit" id="add-account-btn" name="submit" class="btn btn-sm btn-primary p-2">Confirm</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+        <!--Disapprove MODAL -->
+        <div class="modal" tabindex="-1" role="dialog" id="disapprove-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Xác nhận xoá tài khoản</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Bạn có muốn xoá tài khoản này không?
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a>
+                            <button type="button" class="btn btn-danger" id="disapprove-btn"> Confirm </button>
+                        </a>
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+    MODAL
+    -->
+
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript"></script>
+
+    </body>
+
+</html>
