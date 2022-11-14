@@ -49,6 +49,11 @@
                     </a>
                 </li>
                 <li>
+                    <a class="app-menu__item active" href="profile.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Profile</span>
+                    </a>
+                </li>
+                <li>
                     <a class="app-menu__item active" href="lich-su-dat-san.html">
                         <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Lịch sử đặt sân</span>
                     </a>
@@ -96,7 +101,7 @@
                                         <td>Đặt thành công</td>
                                         <td>22/09/2022</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary" href ="detail.html">Detail</button>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
                                         </td>
                                     </tr>
 
@@ -110,7 +115,7 @@
                                         <td>Đặt thành công</td>
                                         <td>22/09/2022</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary" href ="detail.html">Detail</button>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
                                         </td>
                                     </tr>
 
@@ -124,7 +129,7 @@
                                         <td>Đặt thành công</td>
                                         <td>22/09/2022</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary" href ="detail.html">Detail</button>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
                                         </td>
                                     </tr>
 
@@ -138,7 +143,7 @@
                                         <td>Đặt thành công</td>
                                         <td>22/09/2022</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary" href ="detail.html">Detail</button>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
                                         </td>
                                     </tr>
 
@@ -152,7 +157,7 @@
                                         <td>Đặt thành công</td>
                                         <td>22/09/2022</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary" href ="detail.html">Detail</button>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
                                         </td>
                                     </tr>
 
@@ -169,24 +174,71 @@
     -->
        
 
-     <!--Approve MODAL -->
-        <div class="modal" tabindex="-1" role="dialog" id="approve-modal">
+     <!--MODAL -->
+        <div class="modal" tabindex="-1" role="dialog" id="detail-modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Xác nhận đơn đặt sân</h5>
+                        <h5 class="modal-title">Thông tin chi tiết sân bóng</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Bạn có chắc là bạn muốn xác nhận đơn đặt sân này không?</p>
-
+                        <div class="row">
+                            <div class="form-group  col-md-12">
+                                <span class="thong-tin-thanh-toan">
+                                    <h5>Thông tin chi tiết đơn đặt sân</h5>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="control-label">ID</label>
+                                <span class="form-control"> 1234 </span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Tên khách hàng</label>
+                                <span class="form-control"> Nguyễn Văn A </span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">SĐT</label>
+                                <span class="form-control">123456789</span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label class="control-label">Địa chỉ</label>
+                                <span class="form-control">123 Nguyễn Hữu Thọ, Quận 7</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Sân bóng</label>
+                                <span class="form-control">Rạch Đĩa</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Sân</label>
+                                <span class="form-control">Sân số 2</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Khung giờ</label>
+                                <span class="form-control">10:00 - 14:00</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Giá đặt sân</label>
+                                <span class="form-control">200.000đ</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Tên chủ sân</label>
+                                <span class="form-control">Nguyễn Văn B</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">SĐT chủ sân</label>
+                                <span class="form-control">123456789</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="modal-footer">
                         <a>
-                            <button type="button" class="btn btn-success" id="approve-btn">Confirm</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
                         </a>
 
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -196,40 +248,6 @@
         </div>
 
 
-        <!--Disapprove MODAL -->
-        <div class="modal" tabindex="-1" role="dialog" id="disapprove-modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Xác nhận từ chối hóa đơn</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Bạn có chắc là bạn muốn từ chối đơn đặt sân này không?
-                        </p>
-                        <div class="form-group">
-                            <div id="fail-alert" class="alert alert-danger mt-2" style="opacity: 0; display: none">
-                                This type of file is not allowed
-                            </div>
-                            <div id="success-alert" class="alert alert-success mt-2" style="opacity: 0; display: none">
-                                This type of file is allowed
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <a>
-                            <button type="button" class="btn btn-danger" id="disapprove-btn"> Confirm </button>
-                        </a>
-
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--
     MODAL
     -->
