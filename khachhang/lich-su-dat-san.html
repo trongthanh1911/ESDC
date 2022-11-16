@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lịch sử đặt sân</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Main CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/khachhang/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!-- Font-icon css-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+      
+      </head>
+
+    <body class="app sidebar-mini rtl">
+        <!-- Navbar-->
+        <header class="app-header">
+            <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+                                            aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+                <!-- User Menu-->
+                <li>
+                    <a class="app-nav__item" data-toggle="dropdown"><i class="fa fa-cog"></i> </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../login/change-password.html">Đổi mật khẩu</a></li>
+                    <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </header>
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user">
+                <img class="app-sidebar__user-avatar" src="../images/slide2.jpg" width="50px"
+                     alt="User Image">
+                <div>
+                    <p class="app-sidebar__user-name"><b>Soccer Booking</b></p>
+                    <p class="app-sidebar__user-designation">Xin chào Nguyễn Văn A</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="app-menu">
+                <li>
+                    <a class="app-menu__item active" href="home.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item active" href="profile.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item active" href="lich-su-dat-san.html">
+                        <i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Lịch sử đặt sân</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="app-content">
+            <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side">
+                    <li class="breadcrumb-item active"><a href="#"><b>Lịch sử đặt sân</b></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tile">
+                        <div class="tile-body">
+
+                            <table class="table table-hover table-bordered" id="sampleTable">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Tên Sân</th>
+                                        <th>Địa chỉ</th>
+                                        <th>Sân</th>
+                                        <th>Giá</th>
+                                        <th>Khung giờ</th>
+                                        <th>Trạng thái</th>
+                                        <th>Ngày tạo</th>
+                                        <th>Chi tiết</th>
+                                    </tr>
+                                </thead>
+                                 <tbody>
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>Sân bóng đá Rạch Đĩa</td>
+                                        <td>123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh</td>
+                                        <td>Sân 2</td>
+                                        <td>100.000đ</td>
+                                        <td>10:00 - 14:00</td>
+                                        <td>Đang chờ</td>
+                                        <td>22/09/2022</td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>Sân bóng đá Rạch Đĩa</td>
+                                        <td>123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh</td>
+                                        <td>Sân 2</td>
+                                        <td>100.000đ</td>
+                                        <td>10:00 - 14:00</td>
+                                        <td>Đang chờ</td>
+                                        <td>22/09/2022</td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>Sân bóng đá Rạch Đĩa</td>
+                                        <td>123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh</td>
+                                        <td>Sân 2</td>
+                                        <td>100.000đ</td>
+                                        <td>10:00 - 14:00</td>
+                                        <td>Đang chờ</td>
+                                        <td>22/09/2022</td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>Sân bóng đá Rạch Đĩa</td>
+                                        <td>123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh</td>
+                                        <td>Sân 2</td>
+                                        <td>100.000đ</td>
+                                        <td>10:00 - 14:00</td>
+                                        <td>Đang chờ</td>
+                                        <td>22/09/2022</td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12434</td>
+                                        <td>Sân bóng đá Rạch Đĩa</td>
+                                        <td>123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh</td>
+                                        <td>Sân 2</td>
+                                        <td>100.000đ</td>
+                                        <td>10:00 - 14:00</td>
+                                        <td>Đang chờ</td>
+                                        <td>22/09/2022</td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#detail-modal">Detail</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--
+      MODAL
+    -->
+       
+
+     <!--MODAL -->
+        <div class="modal" tabindex="-1" role="dialog" id="detail-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thông tin chi tiết sân bóng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group  col-md-12">
+                                <span class="thong-tin-thanh-toan">
+                                    <h5>Thông tin chi tiết đơn đặt sân</h5>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="control-label">ID</label>
+                                <span class="form-control"> 1234 </span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Tên khách hàng</label>
+                                <span class="form-control"> Nguyễn Văn A </span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">SĐT</label>
+                                <span class="form-control">123456789</span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label class="control-label">Địa chỉ</label>
+                                <span class="form-control">123 Nguyễn Hữu Thọ, Quận 7</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Sân bóng</label>
+                                <span class="form-control">Rạch Đĩa</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Sân</label>
+                                <span class="form-control">Sân số 2</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Khung giờ</label>
+                                <span class="form-control">10:00 - 14:00</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Giá đặt sân</label>
+                                <span class="form-control">200.000đ</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Tên chủ sân</label>
+                                <span class="form-control">Nguyễn Văn B</span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">SĐT chủ sân</label>
+                                <span class="form-control">123456789</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+                        </a>
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+    MODAL
+    -->
+
+        <script src="../js/khachhang/jquery-3.2.1.min.js"></script>
+        <script src="../js/khachhang/popper.min.js"></script>
+        <script src="../js/khachhang/bootstrap.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../js/khachhang/main.js"></script>
+        <script src="../js/khachhang/pace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+        <script type="text/javascript" src="../js/khachhang/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../js/khachhang/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript"></script>
+
+    </body>
+
+</html>

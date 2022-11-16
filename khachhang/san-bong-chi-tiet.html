@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sân bóng</title>
+    <!-- Bootstrap & Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/khachhang/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  </head>
+  <body class="app sidebar-mini rtl">
+    <header class="app-header">
+            <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+                                            aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+                <!-- User Menu-->
+
+                <li>
+                    <a class="app-nav__item" data-toggle="dropdown"><i class="fa fa-cog"></i> </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../login/change-password.html">Đổi mật khẩu</a></li>
+                    <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </header>
+    <div id="home-san-bong-detail"></div>
+    <div class="container mt-5">
+      <div class="row mb-5">
+        <div class="col-md-12 col-lg-8">
+           <img
+                src="../images/chusan/uploads/daihoccanhsatnhandan.jpg"
+                width="100%"
+                alt=""
+            />
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <h3 class="title mb-3">Sân bóng Rạch Đĩa</h3>
+          <div class="rating d-flex mb-3">
+            <ul class="rating-stars">
+              <span class="rating-star">
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-star">
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-star">
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-star">
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-star">
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </ul>
+            <span class="rating-num"><b>4/5</b></span>
+            <span class="rating-quantity"><b>( 2 đánh giá )</b></span>
+          </div>
+          <div class="location mb-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="location-detail">
+              123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh
+            </span>
+          </div>
+          <div class="price mb-3">
+            Giá:
+            <span class="price-value" style="color: var(--main-color)"
+              >200.000đ</span
+            >
+          </div>
+
+          <button
+            id="book-modal-btn"
+            class="btn btn-primary"
+            type="button"
+            data-toggle="modal"
+            data-target="#book-modal"
+            style="width: 50%"
+          >
+            Đặt sân
+          </button>
+        </div>
+      </div>
+      <div class="row mb-5 g-0">
+        <div class="col-md-12 col-lg-8 detail">
+          <h2>Giới thiệu</h2>
+          <div class="detail-content">
+            Sân bóng mini dành cho 5-7 người. Chiều dài 25m, chiều rông 15m.
+          </div>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-md-12 col-lg-8 google-map">
+          <iframe
+            src="../images/chusan/uploads/san-bong.jfif"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col-md-12 col-lg-4 contact-wrapper">
+          <h3>Thông tin liên hệ</h3>
+          <p>Bạn có thể liên hệ với chủ sân bóng để biết thêm chi tiết về sân</p>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="info-box">
+                <span class="info-box__icon">
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <p class="info-box__text">Tên chủ sân: Nguyễn Văn A</p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="info-box">
+                <span class="info-box__icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <p class="info-box__text">
+                  Địa chỉ: 123 Nguyễn Hữu Thọ, quận 7, TP. Hồ Chí Minh
+                </p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="info-box">
+                <span class="info-box__icon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <p class="info-box__text">123456789</p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="info-box">
+                <span class="info-box__icon">
+                  <i class="fa-solid fa-clock"></i>
+                </span>
+                <p class="info-box__text" id="textOpenTime">Giờ mở cửa: 8:00 </p>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="info-box">
+                <span class="info-box__icon">
+                  <i class="fa-solid fa-clock"></i>
+                </span>
+                <p class="info-box__text" id="textCloseTime">Giờ đóng cửa: 20:00 </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Book MODAL -->
+    <div class="modal" tabindex="-1" role="dialog" id="book-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" style="color: var(--main-color)">
+              Đặt sân bóng
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST">
+              <div class="form-group">
+                <select id="selectBox" class="form-control mb-3">
+                  <option selected disabled="disabled">Chọn số sân</option>
+                      <option value="">Sân số 1</option>
+                      <option value="">Sân số 2</option>
+                      <option value="">Sân số 3</option>
+                      
+                </select>
+              </div>
+              <div class="container-fluid">
+                <ul class="time-list row">
+                    <!-- Data will be loaded by AJAX-->
+                </ul>
+              </div>
+
+              <div class="form-group">
+                <div
+                  id="fail-alert"
+                  class="alert alert-danger mt-2"
+                  style="opacity: 0; display: none"
+                >
+                  This type of file is not allowed
+                </div>
+                <div
+                  id="success-alert"
+                  class="alert alert-success mt-2"
+                  style="opacity: 0; display: none"
+                >
+                  This type of file is allowed
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <a>
+              <button type="button" class="btn btn-primary" id="confirm-btn">
+                Xác nhận
+              </button>
+            </a>
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
